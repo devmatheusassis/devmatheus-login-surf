@@ -1,0 +1,137 @@
+
+:root{
+    --verde: #4FFFA0; 
+    --azul: #34CEFF;
+    --preto: #000000;
+    --branco: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+ }
+
+.container__titulo_registration{
+    padding: 5rem 0;
+    margin: 0 auto;
+    text-align: center;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+}
+.formulario input{
+    background-color: rgba(0,0,0,0.5);
+    backdrop-filter: blur(5px);
+    padding: 1rem 1.5rem;
+    margin: .5rem 0;
+    border: none;
+    border-radius: 2rem;
+    outline: none;
+    color: var(--branco);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+}
+.formulario input::placeholder{
+    color: var(--branco);
+}
+.container__continue{
+    display: flex;
+    justify-content: center;
+}
+.continue{
+    text-decoration: none;
+    color: var(--branco);
+    margin: 1rem 0;
+    font-weight: bold;
+}
+.container__redes{
+    display: flex;
+    justify-content: space-evenly;
+}
+.container__google{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    width: 8rem;
+    background-color: rgba(0,0,0,0.5);
+    color: var(--branco);
+    padding: .6rem .5rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    font-size: 15px;
+    backdrop-filter: blur(5px);
+}
+.container__facebook{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    width: 8rem;
+    background-color: rgba(0,0,0,0.5);
+    color: var(--branco);
+    padding: .6rem .5rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    font-size: 15px;
+    backdrop-filter: blur(5px);
+}
+.icone__google{
+    border-radius: 50%;
+    width: 20px;
+}
+.icone__facebook{
+    border-radius: 50%;
+    width: 20px;
+}
+.container__forget{
+    display: flex;
+    justify-content: center;
+}
+.forget{
+    text-decoration: none;
+    color: var(--preto);
+    font-weight: bold;
+    margin: 2rem 0 1rem;
+}
+#botao__signup{
+    background-color: var(--verde);
+    font-weight: bold;
+    height: 6vh;
+    padding: 0;
+    cursor: pointer;
+}
+#botao__signup:active{
+    background-color: #44c480;
+}
+.botao__login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6vh;
+    background-color: transparent;
+    border-radius: 2rem;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--preto);
+    cursor: pointer;
+    backdrop-filter: blur(5px);
+}
+.botao__login:active{
+    backdrop-filter: blur(10px);
+}
+@media screen and (min-width: 426px) {
+    .botao__login{
+        backdrop-filter: blur(5px);
+        border: 2px solid #ccc;
+    }
+}
+
+@media screen and (min-width: 769px){
+    .container__titulo_registration{
+        width: 48%;
+        margin: 0;
+    }
+    .formulario{
+        width: 48%;
+    }
+    .botao__login{
+        width: 48%;
+    }
+}
